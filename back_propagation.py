@@ -173,33 +173,35 @@ class SimpleNet:
 
         return outputs
 
-    def backward(self, y, y_hat):
+    def backward(self, y_hat, y):
         """ Implementation of the backward pass.
         It should utilize the saved loss to compute gradients and update the network all the way to the front.
         """
-
-        if(y_hat > y):
-            d = 1
-        else:
-            d = -1
         lr = 0.1
+        
+        # derivative of the MSE function 
+        der_loss =  y_hat - y 
 
-        self.outputs_delta = d*der_sigmoid(self.output_inp)
-        L3_layer = np.dot(self.L2_out.T, self.outputs_delta)
+        # derivative of the MAE function 
+        # if(y_hat > y):
+        #     der_loss = 1
+        # else:
+        #     der_loss = -1
+
+        self.outputs_delta = der_loss * der_sigmoid(self.output_inp)
+        L3_grad = np.dot(self.L2_out.T, self.outputs_delta)
 
         self.L2_error = np.dot( self.W3, self.outputs_delta)
-        der_tmp = der_sigmoid(self.L2_inp)
-        self.L2_delta = der_tmp * self.L2_error.T
-        L2_layer = np.dot(self.L1_out.T, self.L2_delta) 
+        self.L2_delta = der_sigmoid(self.L2_inp) * self.L2_error.T
+        L2_grad = np.dot(self.L1_out.T, self.L2_delta) 
         
         self.L1_error = np.dot( self.L2_delta, self.W2.T)
-        L1_der_tmp = der_sigmoid(self.L1_inp)
-        self.L1_delta = L1_der_tmp * self.L1_error
-        L1_layer = np.dot(self.inputs.T, self.L1_delta) 
+        self.L1_delta = der_sigmoid(self.L1_inp) * self.L1_error
+        L1_grad = np.dot(self.inputs.T, self.L1_delta) 
 
-        self.W3 = self.W3 - lr*L3_layer
-        self.W2 = self.W2 - lr*L2_layer
-        self.W1 = self.W1 - lr*L1_layer
+        self.W3 = self.W3 - lr*L3_grad
+        self.W2 = self.W2 - lr*L2_grad
+        self.W1 = self.W1 - lr*L1_grad
 
 
     def train(self, inputs, labels):
@@ -221,7 +223,7 @@ class SimpleNet:
                 #   3. propagate gradient backward to the front
                 self.output = self.forward(inputs[idx:idx+1, :])
                 self.error = self.output - labels[idx:idx+1, :]
-                self.backward(labels[idx:idx+1, :], self.output)
+                self.backward(self.output, labels[idx:idx+1, :])
 
             if epochs % self.print_interval == 0:
                 print('Epochs {}: '.format(epochs))
@@ -240,11 +242,16 @@ class SimpleNet:
         """
         n = inputs.shape[0]
         error = 0.0
+        mse = 0.0
+
         for idx in range(n):
             result = self.forward(inputs[idx:idx+1, :])
             error += abs(result - labels[idx:idx+1, :])
-
+            mse += (abs(result - labels[idx:idx+1, :])**2)
+            # error += diff**2
         error /= n
+        mse /= 2*n
+
         print('accuracy: %.2f' % ((1 - error)*100) + '%')
         print('')
 
