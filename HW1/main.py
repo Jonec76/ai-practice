@@ -10,6 +10,21 @@ features_num = 18
 label_pm25_idx = 9
 train_features = [ 4, 5, 6, 7, 8, 9, 11, 12, 14]
 # train_features = [ 8, 9]
+iters = 200
+window = 3
+def get_fuzzy_data(X):
+    ctr = 1
+    new_x = 0
+    new_X = []
+    for x in X:
+        new_x += x
+        if (ctr % 3)==0 :
+            new_X.append(new_x/window)
+            ctr = 1
+            new_x = 0
+            continue
+        ctr+=1
+    return new_X
 
 def get_file_data(file_name):
     row_data = []
@@ -52,17 +67,17 @@ import random
 from statistics import mean
 from statistics import stdev
 
-learning_rate = 0.3
+learning_rate = 0.2
 
-dim = train_days * len(train_features)
-w = res = [random.randrange(1, 10, 1) for i in range(dim)]
+dim = int(train_days * len(train_features) / window)
+w = [random.randrange(1, 10, 1) for i in range(dim)]
 b = 0.0
 grad_w = [0.0]*dim
 grad_b = [0.0]*dim
 # data_num = len(train_data[train_features]) - train_days - 1
 data_num = int(5750*0.9)
 valid_data_num = int(5750*0.1)
-for iter in range(300):
+for iter in range(iters):
     for idx in range(data_num):   
         # feature scaling
         X = []
@@ -72,7 +87,7 @@ for iter in range(300):
             std = stdev(tmp_x) + 0.01
             for i in tmp_x:
                 X.append((i-m)/std)
-        
+        X = get_fuzzy_data(X)
         # SGD training
         y_hat = 0.0
         for i in range(dim):
@@ -97,7 +112,7 @@ for iter in range(300):
             std = stdev(tmp_x) + 0.01
             for x in tmp_x:
                 test_x.append((x-m)/std)
-            
+        test_x = get_fuzzy_data(test_x)
         for i in range(dim):
             y_hat += (w[i] * test_x[i])
         y_hat += b
@@ -130,7 +145,7 @@ for i in range(data_num):
         std = stdev(tmp_x) + 0.01
         for x in tmp_x:
             test_x.append((x-m)/std)
-        
+    test_x = get_fuzzy_data(test_x)
     for i in range(dim):
         y_hat += (w[i] * test_x[i])
     y_hat += b
