@@ -1,0 +1,512 @@
+id
+age
+ Private
+ Self-employed-incorporated
+ State government
+ Self-employed-not incorporated
+ Not in universe
+ Without pay
+ Federal governmentclass of worker
+ Never worked
+ Local government
+ 10
+ 11
+ 38
+ 13
+ 14
+ 15
+ 16
+ 17
+ 32
+ 33
+ 30
+ 31
+ 36
+ 37
+ 34
+ 35
+ 39
+ 23
+ 48
+ 50
+ 18
+ 19
+ 42
+ 25
+ 24
+ 12
+ 26
+ 21
+ 20
+ 49
+ 22
+ 47
+ 29
+ 45
+ 44
+ 43
+ 28
+ 41
+ 40
+ 2
+ 3
+ 0
+ 1
+ 6
+ 7
+ 4
+ 5
+ 8
+ 9
+ 46
+ 51
+ 27
+ 10.1
+ 11.1
+ 12.1
+ 39.1
+ 14.1
+ 15.1
+ 16.1
+ 17.1
+ 32.1
+ 19.1
+ 30.1
+ 31.1
+ 36.1
+ 38.1
+ 34.1
+ 35.1
+ 13.1
+ 9.1
+ 18.1
+ 33.1
+ 42.1
+ 25.1
+ 24.1
+ 27.1
+ 26.1
+ 21.1
+ 20.1
+ 23.1
+ 22.1
+ 43.1
+ 45.1
+ 44.1
+ 29.1
+ 28.1
+ 41.1
+ 37.1
+ 2.1
+ 3.1
+ 0.1
+ 1.1
+ 6.1
+ 7.1
+ 4.1
+ 5.1
+ 8.1
+ 40.1
+ 46.1
+ 1st 2nd 3rd or 4th grade
+ 12th grade no diploma
+ Less than 1st grade
+ Some college but no degree
+ Masters degree(MA MS MEng MEd MSW MBA)
+ 7th and 8th grade
+ 11th grade
+ Bachelors degree(BA AB BS)
+ Prof school degree (MD DDS DVM LLB JD)
+ Associates degree-academic program
+ 5th or 6th grade
+ Doctorate degree(PhD EdD)
+ Associates degree-occup /vocational
+ High school graduate
+ Children
+ 10th grade
+ 9th grade
+wage per hour
+ Not in universe.1
+ College or university
+ High school
+ Separated
+ Divorced
+ Widowed
+ Married-spouse absent
+ Married-civilian spouse present
+ Married-A F spouse present
+ Never married
+ Mining
+ Transportation
+ Medical except hospital
+ Retail trade
+ Finance insurance and real estate
+ Construction
+ Personal services except private HH
+ Manufacturing-nondurable goods
+ Private household services
+ Communications
+ Utilities and sanitary services
+ Not in universe or children
+ Forestry and fisheries
+ Other professional services
+ Education
+ Wholesale trade
+ Agriculture
+ Entertainment
+ Public administration
+ Hospital services
+ Manufacturing-durable goods
+ Social services
+ Business and repair services
+ Armed Forces
+ Other service
+ Technicians and related support
+ Machine operators assmblrs & inspctrs
+ Private household services.1
+ Professional specialty
+ Protective services
+ Farming forestry and fishing
+ Sales
+ Not in universe.2
+ Transportation and material moving
+ Handlers equip cleaners etc 
+ Precision production craft & repair
+ Adm support including clerical
+ Armed Forces.1
+ Executive admin and managerial
+ Other
+ White
+ Asian or Pacific Islander
+ Amer Indian Aleut or Eskimo
+ Black
+ Cuban
+ Chicano
+ Other Spanish
+ Mexican-American
+ NA
+ Do not know
+ Mexican (Mexicano)
+ Central or South American
+ Puerto Rican
+ All other
+ Male
+ Female
+ Not in universe.3
+ Yes
+ No
+ Job loser - on layoff
+ Other job loser
+ Job leaver
+ Not in universe.4
+ New entrant
+ Re-entrant
+ PT for econ reasons usually FT
+ Children or Armed Forces
+ Not in labor force
+ Full-time schedules
+ PT for econ reasons usually PT
+ PT for non-econ reasons usually FT
+ Unemployed part- time
+ Unemployed full-time
+capital gains
+capital losses
+dividends from stocks
+ Nonfiler
+ Joint one under 65 & one 65+
+ Joint both 65+
+ Single
+ Joint both under 65
+ Head of household
+ Northeast
+ West
+ Not in universe.5
+ Midwest
+ Abroad
+ South
+ Connecticut
+ South Dakota
+ Iowa
+ Wisconsin
+ Georgia
+ Kansas
+ Michigan
+ Arizona
+ Utah
+ North Carolina
+ New York
+ Illinois
+ Massachusetts
+ South Carolina
+ Abroad.1
+ Florida
+ Pennsylvania
+ Alaska
+ Vermont
+ Montana
+ Kentucky
+ Nebraska
+ New Mexico
+ Alabama
+ Missouri
+ New Jersey
+ Ohio
+ Colorado
+ Virginia
+ Tennessee
+ Not in universe.6
+ West Virginia
+ New Hampshire
+ Wyoming
+ Nevada
+ Oregon
+ ?
+ Maine
+ Louisiana
+ North Dakota
+ Mississippi
+ Delaware
+ Oklahoma
+ District of Columbia
+ Minnesota
+ Idaho
+ Arkansas
+ Indiana
+ Maryland
+ Texas
+ California
+ Child under 18 of RP of unrel subfamily
+ Spouse of householder
+ Other Rel <18 never marr child of subfamily RP
+ Grandchild 18+ spouse of subfamily RP
+ Child 18+ ever marr RP of subfamily
+ Child 18+ never marr RP of subfamily
+ Spouse of RP of unrelated subfamily
+ Secondary individual
+ Other Rel <18 never married RP of subfamily
+ Child <18 ever marr not in subfamily
+ Other Rel <18 ever marr not in subfamily
+ Other Rel 18+ ever marr not in subfamily
+ Grandchild <18 never marr child of subfamily RP
+ Other Rel <18 never marr not in subfamily
+ Child <18 spouse of subfamily RP
+ Grandchild 18+ ever marr not in subfamily
+ Grandchild <18 never marr not in subfamily
+ Grandchild <18 ever marr not in subfamily
+ Householder
+ Grandchild 18+ never marr not in subfamily
+ Child 18+ spouse of subfamily RP
+ Child 18+ never marr Not in a subfamily
+ Other Rel 18+ ever marr RP of subfamily
+ Grandchild 18+ never marr RP of subfamily
+ Child <18 never marr not in subfamily
+ Other Rel 18+ never marr RP of subfamily
+ Grandchild <18 never marr RP of subfamily
+ Other Rel 18+ spouse of subfamily RP
+ Child <18 never marr RP of subfamily
+ Child 18+ ever marr Not in a subfamily
+ Grandchild 18+ ever marr RP of subfamily
+ Other Rel <18 spouse of subfamily RP
+ In group quarters
+ RP of unrelated subfamily
+ Child <18 ever marr RP of subfamily
+ Other Rel 18+ never marr not in subfamily
+ Nonfamily householder
+ Other Rel <18 ever marr RP of subfamily
+ Child under 18 ever married
+ Child under 18 never married
+ Spouse of householder.1
+ Child 18 or older
+ Nonrelative of householder
+ Group Quarters- Secondary individual
+ Householder.1
+ Other relative of householder
+ Abroad to nonMSA
+ Not in universe.7
+ MSA to MSA
+ Abroad to MSA
+ MSA to nonMSA
+ Nonmover
+ NonMSA to MSA
+ NonMSA to nonMSA
+ Not identifiable
+ ?.1
+ Different division same region
+ Same county
+ Not in universe.8
+ Different region
+ Different state same division
+ Nonmover.1
+ Different county same state
+ Abroad.2
+ ?.2
+ Different state in South
+ Same county.1
+ Not in universe.9
+ Different state in Northeast
+ Different state in Midwest
+ Nonmover.2
+ Different county same state.1
+ Different state in West
+ Abroad.3
+ ?.3
+ Not in universe under 1 year old
+ Yes.1
+ No.1
+ Not in universe.10
+ ?.4
+ No.2
+ Yes.2
+num persons worked for employer
+ Not in universe.11
+ Mother only present
+ Neither parent present
+ Both parents present
+ Father only present
+ Hungary
+ Cuba
+ Puerto-Rico
+ El-Salvador
+ Guatemala
+ Outlying-U S (Guam USVI etc)
+ Holand-Netherlands
+ United-States
+ China
+ Thailand
+ Haiti
+ Germany
+ South Korea
+ Columbia
+ Dominican-Republic
+ Poland
+ Philippines
+ Trinadad&Tobago
+ Hong Kong
+ Vietnam
+ Honduras
+ Mexico
+ Portugal
+ England
+ Jamaica
+ India
+ Yugoslavia
+ Greece
+ Japan
+ Taiwan
+ ?.5
+ Nicaragua
+ Canada
+ Italy
+ Panama
+ Scotland
+ France
+ Cambodia
+ Ecuador
+ Iran
+ Laos
+ Peru
+ Ireland
+ Columbia.1
+ Cuba.1
+ Puerto-Rico.1
+ El-Salvador.1
+ Guatemala.1
+ Outlying-U S (Guam USVI etc).1
+ Holand-Netherlands.1
+ United-States.1
+ China.1
+ Thailand.1
+ Haiti.1
+ Germany.1
+ South Korea.1
+ Iran.1
+ Hungary.1
+ Dominican-Republic.1
+ Poland.1
+ Philippines.1
+ Trinadad&Tobago.1
+ Hong Kong.1
+ Vietnam.1
+ Honduras.1
+ Mexico.1
+ Portugal.1
+ England.1
+ Jamaica.1
+ India.1
+ Yugoslavia.1
+ Greece.1
+ Japan.1
+ Taiwan.1
+ ?.6
+ Nicaragua.1
+ Canada.1
+ Italy.1
+ Panama.1
+ Scotland.1
+ France.1
+ Cambodia.1
+ Ecuador.1
+ Laos.1
+ Peru.1
+ Ireland.1
+ Columbia.2
+ Cuba.2
+ Puerto-Rico.2
+ El-Salvador.2
+ Guatemala.2
+ Outlying-U S (Guam USVI etc).2
+ Holand-Netherlands.2
+ United-States.2
+ China.2
+ Thailand.2
+ Haiti.2
+ Germany.2
+ South Korea.2
+ Iran.2
+ Hungary.2
+ Dominican-Republic.2
+ Poland.2
+ Philippines.2
+ Trinadad&Tobago.2
+ Nicaragua.2
+ Vietnam.2
+ Honduras.2
+ Mexico.2
+ Portugal.2
+ England.2
+ Jamaica.2
+ India.2
+ Yugoslavia.2
+ Greece.2
+ Japan.2
+ Taiwan.2
+ ?.7
+ Hong Kong.2
+ Canada.2
+ Italy.2
+ Panama.2
+ Scotland.2
+ France.2
+ Cambodia.2
+ Ecuador.2
+ Laos.2
+ Peru.2
+ Ireland.2
+ Native- Born in Puerto Rico or U S Outlying
+ Native- Born abroad of American Parent(s)
+ Foreign born- U S citizen by naturalization
+ Native- Born in the United States
+ Foreign born- Not a citizen of U S 
+ 2.2
+ 0.2
+ 1.2
+ Not in universe.12
+ Yes.3
+ No.3
+ 2.3
+ 0.3
+ 1.3
+weeks worked in year
+ 94
+ 95
+[31]
